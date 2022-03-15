@@ -786,7 +786,7 @@ class Style
                 continue;
             }
 
-            $val = $this->single_length_in_pt((string) $l, $ref_size, $font_size);
+            $val = $this->single_length_in_pt((string) $l, (float)$ref_size, (float)$font_size);
 
             // FIXME: Using the ref size as fallback here currently ensures that
             // invalid widths or heights are treated as the corresponding
